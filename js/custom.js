@@ -12,14 +12,21 @@ function send_email(){
 }
 (function($) {
     'use strict'; // Start of use strict
-
+    $('.owl-carousel').owlCarousel({
+    dots: false,
+    loop:true,
+    margin:10,
+    navText : ["<i class='yellowcolor fa fa-angle-left fa-5x' aria-hidden='true'></i>","<i class='yellowcolor fa fa-angle-right fa-5x' aria-hidden='true'></i>"],
+    nav:true,
+    items:1,
+});
     $(window).on("load scroll", function() {
 
         /*------------------------------------------------------------------
         Loader
         ------------------------------------------------------------------*/
         $("#loader").fadeOut("fast");
-        // map zooming 	 
+        // map zooming
         $('.google-map').on('click', function() {
             $('.google-map').find('iframe').css("pointer-events", "auto");
         });
@@ -96,7 +103,7 @@ function send_email(){
     });
 
     /*------------------------------------------------------------------
-   	 Scrollup opacity downarrow 
+   	 Scrollup opacity downarrow
 	 ------------------------------------------------------------------*/
     var bottom_arrow = $('.bottom_row, .banner-content');
     $(window).on('scroll', function() {
@@ -249,7 +256,7 @@ function send_email(){
 	/*------------------------------------------------------------------
     FAQ
     ------------------------------------------------------------------*/
-    if($('.fp-faq').length){			
+    if($('.fp-faq').length){
 			$( '.fp-faq' ).on( 'click', 'h2', function() {
 				var $faq = $( this ).closest( '.fp-faq' );
 
@@ -258,8 +265,8 @@ function send_email(){
 				} );
 			} );
 	}
-	if($('.fp-accordion').length){		
-		
+	if($('.fp-accordion').length){
+
 		$( '.fp-accordion' ).on( 'click', 'h2, .icons', function() {
 			var $faq = $( this ).closest( '.fp-accordion' );
 
@@ -267,7 +274,7 @@ function send_email(){
 				$faq.toggleClass( 'active' );
 			} );
 		} );
-		}	
+		}
 })(jQuery);
 /*------------------------------------------------------------------
 	WOW
@@ -280,51 +287,51 @@ wow = new WOW({
 wow.init();
 /*Окна*/
 		function show(state){
- 
-            document.getElementById('window').style.display = state;            
+
+            document.getElementById('window').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }
 	    function show2(state){
- 
-            document.getElementById('window2').style.display = state;            
+
+            document.getElementById('window2').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
 
     }
 		function show3(state){
- 
-            document.getElementById('window3').style.display = state;            
+
+            document.getElementById('window3').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }    function show4(state){
- 
-            document.getElementById('window4').style.display = state;            
+
+            document.getElementById('window4').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }    function show5(state){
- 
-            document.getElementById('window5').style.display = state;            
+
+            document.getElementById('window5').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }    function show6(state){
- 
-            document.getElementById('window6').style.display = state;            
+
+            document.getElementById('window6').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }    function show7(state){
- 
-            document.getElementById('window7').style.display = state;            
+
+            document.getElementById('window7').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }    function show8(state){
- 
-            document.getElementById('window8').style.display = state;            
+
+            document.getElementById('window8').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }    function show9(state){
- 
-            document.getElementById('window9').style.display = state;            
+
+            document.getElementById('window9').style.display = state;
             document.getElementById('wrap').style.display = state;
 			document.getElementById('infoo').style.display = state;
     }
