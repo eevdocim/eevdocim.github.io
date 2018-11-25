@@ -120,6 +120,8 @@ section {
 	width: 100%;
 	float: left;
 	padding-top: 70px;
+	/*padding-bottom: 25px;*/
+}
 }
 .section-title {
   padding-bottom: 40px;
@@ -1342,16 +1344,29 @@ a {display: block; text-align: center;}
 .service-item a {
 	color: #283949;
 }
+.form-main{
+	float: right;
+	width: 410px;
+	height: 490px;
+	background: rgba(243, 185, 0, 0.91);
+	border-radius: 20px;
+	padding: 35px;
+}
 .form-main .form-control {
-	background: #ffffff none repeat scroll 0 0;
-	border-radius: 0;
-	border-style: none none solid;
-	border-width: medium medium 1px;
+	background: rgba(0,0,0,0);
+	border: 5px solid white;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 20px;
 	box-shadow: none;
 	height: 45px;
 	margin-bottom: 20px;
 	padding: 0 0 0 10px;
 	transition: all 0.3s ease 0s;
+}
+.form-main .form-control::placeholder {
+	color: #fff;
+	font-weight: bold;
 }
 .form-main textarea.form-control {
 	height: auto;
@@ -1361,8 +1376,10 @@ a {display: block; text-align: center;}
 	border-color: #fe8840;
 }
 .form-main .btn {
-	color:#000;
-	}
+	color:rgba(243, 185, 0, 0.91);
+	background-color: #fff;
+	font-weight: bold;
+}
 .google-map {
 	float: left;
 	width: 100%;
@@ -1379,6 +1396,14 @@ a {display: block; text-align: center;}
 }
 #contactus .info i:before{
 	margin: 5px;
+}
+#contactus .container{
+	overflow: hidden;
+}
+#contactus img{
+	position: absolute;
+	z-index: -1;
+	height: 100%;
 }
 /*
 ================================================
