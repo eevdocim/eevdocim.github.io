@@ -375,9 +375,9 @@ section {
 }
 .navbar-default .navbar-nav li a {
 	color: #000;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 600;
-	padding: 30px 13px;
+	padding: 30px 10px;
 	transition: all 0.3s ease 0s;
 	text-transform: uppercase;
 	background-color: inherit;
